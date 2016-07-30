@@ -1,0 +1,30 @@
+{
+  "name": "mqtt-ota",
+  "version": "1.0.0",
+  "description": "An event driven library to update files over-the-air via mqtt client.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AkashBabu/mqtt-ota.git"
+  },
+  "keywords": [
+    "ota",
+    "mqtt",
+    "mqtt-ota",
+    "remote",
+    "update",
+    "files"
+  ],
+  "author": "Akash Babu <001akashbabu@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AkashBabu/mqtt-ota/issues"
+  },
+  "homepage": "https://github.com/AkashBabu/mqtt-ota#readme",
+  "dependencies": {
+    "recursively-keys": "x"
+  }
+}
