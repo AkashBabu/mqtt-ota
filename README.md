@@ -81,30 +81,6 @@ An event driven nodejs library for updating file over the air via mqtt client.
 	})
 
 
-## Example For updating a running code 
-	
-	There are two ways of doing this :
-
-	1. Run the code using PM2 and then exec 'pm2 restart filename.js'
-
-	2. If the are not running the code using PM2 then you may have to do the following work around:
-
-		Add the following lines into any file that you wish to update 
-
-			var fs = require('fs');
-			fs.writeFile(__filename + '.pid', process.pid.toString(), function(err){
-				console.log('Child PID :', process.pid.toString());
-			})
-			process.on('uncaughtException', function(err){
-				console.log('error:', err );
-			})
-
-		The above lines ensure that the process id of the running code is written to filename.pid
-
-		Then create another file called mqttFileRestart.js and add the following into the file:
-
-
-
 ## Contributing
 	
 	In lieu of a formal styleguide, take care to maintain the existing coding style.
